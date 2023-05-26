@@ -28,34 +28,34 @@ The following API endpoints are available in the application:
 
 ### Authentication endpoints
 
-POST ``/signup``: Register a new user. Requires a JSON body with name, email, and password fields.
-POST ``/signin``: Login a user. Requires a JSON body with email and password fields. Returns a JWT token.
-GET ``/signout``: Logout a user.
+1- POST ``/signup``: Register a new user. Requires a JSON body with name, email, and password fields.
+2- POST ``/signin``: Login a user. Requires a JSON body with email and password fields. Returns a JWT token.
+3- GET ``/signout``: Logout a user.
 
 ### User endpoints
 
-GET ``/allusers``: Get All users .
-GET ``/user/:userId``: Get a user by its ID.
-PUT ``/user/:userId``: Update a user by its ID. Requires a JSON body with name and bio fields.
-PUT ``/follow``: Follow a user. Requires a JSON body with userIdToFollow field.
-PUT ``/unfollow``: Unfollow a user. Requires a JSON body with userIdToUnfollow field.
-GET  ``/user/findpeople/:userId``: Get all users except the currently logged in user.
-DELETE ``/user/:userId``: Get a user by its ID.
-GET ``/user/photo/:userId``: Get a user's profile photo by its ID.
+1- GET ``/allusers``: Get All users .
+2- GET ``/user/:userId``: Get a user by its ID.
+3- PUT ``/user/:userId``: Update a user by its ID. Requires a JSON body with name and bio fields.
+4- PUT ``/follow``: Follow a user. Requires a JSON body with userIdToFollow field.
+5- PUT ``/unfollow``: Unfollow a user. Requires a JSON body with userIdToUnfollow field.
+6- GET  ``/user/findpeople/:userId``: Get all users except the currently logged in user.
+7- DELETE ``/user/:userId``: Get a user by its ID.
+8- GET ``/user/photo/:userId``: Get a user's profile photo by its ID.
 
 ### Post endpoints
 
-GET ``/post``: Get all posts.
-GET ``/post/by/:userId``: Get all posts by a user.
-POST ``/post/new/:userId``: Create a new post. Requires a JSON body with two text field and User must be logged in.
-PUT ``/post/update/:postId``: Update a post by its ID. Requires a JSON body with two text field and User must be logged in.
-DELETE ``/post/:postId``: Delete a post by its ID. User must be logged in and must be the author of the post.
-GET ``/post/photo/:postId``: Get a post's photo by its ID.
-GET ``/singlePost/:postId``: Get a post by its ID.
-PUT ``/post/like``: Like a post. Requires a JSON body with postId field.
-PUT ``/post/unlike``: Unlike a post. Requires a JSON body with postId field.
-PUT ``/post/comment``: Comment on a post. Requires a JSON body with postId and text fields.
-PUT ``/post/uncomment``: Uncomment a post. Requires a JSON body with postId and comment fields.
+1- GET ``/post``: Get all posts.
+2- GET ``/post/by/:userId``: Get all posts by a user.
+3- POST ``/post/new/:userId``: Create a new post. Requires a JSON body with two text field and User must be logged in.
+4- PUT ``/post/update/:postId``: Update a post by its ID. Requires a JSON body with two text field and User must be logged in.
+5- DELETE ``/post/:postId``: Delete a post by its ID. User must be logged in and must be the author of the post.
+6- GET ``/post/photo/:postId``: Get a post's photo by its ID.
+7- GET ``/singlePost/:postId``: Get a post by its ID.
+8- PUT ``/post/like``: Like a post. Requires a JSON body with postId field.
+9- PUT ``/post/unlike``: Unlike a post. Requires a JSON body with postId field.
+10- PUT ``/post/comment``: Comment on a post. Requires a JSON body with postId and text fields.
+11- PUT ``/post/uncomment``: Uncomment a post. Requires a JSON body with postId and comment fields.
 
 ## Technologies used
 
